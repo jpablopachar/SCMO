@@ -13,7 +13,6 @@
               <th>Usuario</th>
               <th>Nombre</th>
               <th>Apellido</th>
-              <th>Foto</th>
               <th>Editar</th>
             </tr>
           </thead>
@@ -22,8 +21,7 @@
               <td>{{ user.username }}</td>
               <td>{{ user.first_name }}</td>
               <td>{{ user.last_name }}</td>
-              <td></td>
-              <td><a href="#" class="btn btn-success"><i class="fa fa-pencil"></i></a></td>
+              <td><a href="{% url 'bases:editarPerfil' %}" class="btn btn-success"><i class="fa fa-pencil"></i></a></td>
             </tr>
           </tbody>
         </table>
